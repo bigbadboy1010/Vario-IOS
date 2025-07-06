@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSMotionUsageDescription</key>
+	<string>GliderTracker benötigt den Bewegungssensor, um Flugbewegungen und Vario-Daten aufzuzeichnen.</string>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Glider Tracker Vario Watch.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>GliderTracker.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>GliderTrackerIwatch Watch App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>GliderVarioWatch Watch App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>VarioWatch Watch App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E657B6D32B40A33D00065E85</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6BB96602B6570870008C818</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6BB966F2B65708A0008C818</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E6BB96792B65708A0008C818</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

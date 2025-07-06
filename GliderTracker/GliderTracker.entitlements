@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Push Notifications -->
+    <key>aps-environment</key>
+    <string>development</string>
+    
+    <!-- Sign in with Apple -->
+    <key>com.apple.developer.applesignin</key>
+    <array>
+        <string>Default</string>
+    </array>
+    
+    <!-- BEIDE iCloud Container (bereits korrekt!) -->
+    <key>com.apple.developer.icloud-container-identifiers</key>
+    <array>
+        <!-- Legacy Container (alt) -->
+        <string>iCloud.com.miggu69.glidertracker</string>
+        <!-- Primärer Container (neu) -->
+        <string>iCloud.org.miggu69.GliderTracker</string>
+    </array>
+    
+    <key>com.apple.developer.icloud-services</key>
+    <array>
+        <string>CloudDocuments</string>
+        <string>CloudKit</string>
+    </array>
+    
+    <key>com.apple.developer.ubiquity-container-identifiers</key>
+    <array>
+        <!-- Beide Container für CloudDocuments -->
+        <string>iCloud.com.miggu69.glidertracker</string>
+        <string>iCloud.org.miggu69.GliderTracker</string>
+    </array>
+    
+    <key>com.apple.developer.ubiquity-kvstore-identifier</key>
+    <string>$(TeamIdentifierPrefix)org.miggu69.GliderTracker</string>
+    
+    <!-- App Sandbox -->
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+    
+    <!-- Audio Access -->
+    <key>com.apple.security.device.audio-input</key>
+    <true/>
+    
+    <!-- Hardware Access -->
+    <key>com.apple.security.device.bluetooth</key>
+    <true/>
+    <key>com.apple.security.device.usb</key>
+    <true/>
+    
+    <!-- File Access -->
+    <key>com.apple.security.files.documents.read-write</key>
+    <true/>
+    <key>com.apple.security.files.downloads.read-write</key>
+    <true/>
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+    
+    <!-- Network Access -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+    <key>com.apple.security.network.server</key>
+    <true/>
+    
+    <!-- Location Services -->
+    <key>com.apple.security.personal-information.location</key>
+    <true/>
+    
+    <!-- Keychain Access - KORRIGIERT -->
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)org.miggu69.GliderTracker</string>
+    </array>
+</dict>
+</plist><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Push Notifications -->
+    <key>aps-environment</key>
+    <string>development</string>
+    
+    <!-- Sign in with Apple -->
+    <key>com.apple.developer.applesignin</key>
+    <array>
+        <string>Default</string>
+    </array>
+    
+    <!-- BEIDE iCloud Container -->
+    <key>com.apple.developer.icloud-container-identifiers</key>
+    <array>
+        <!-- Primärer Container (neu) -->
+        <string>iCloud.org.miggu69.GliderTracker</string>
+        <!-- Legacy Container (alt) -->
+        <string>iCloud.com.miggu69.glidertracker</string>
+    </array>
+    
+    <key>com.apple.developer.icloud-services</key>
+    <array>
+        <string>CloudDocuments</string>
+        <string>CloudKit</string>
+    </array>
+    
+    <key>com.apple.developer.ubiquity-container-identifiers</key>
+    <array>
+        <!-- Beide Container für CloudDocuments -->
+        <string>iCloud.org.miggu69.GliderTracker</string>
+        <string>iCloud.com.miggu69.glidertracker</string>
+    </array>
+    
+    <key>com.apple.developer.ubiquity-kvstore-identifier</key>
+    <string>$(TeamIdentifierPrefix)org.miggu69.GliderTracker</string>
+    
+    <!-- App Sandbox (für macOS/Catalyst) -->
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+    
+    <!-- Network Access (für OpenAIP API) -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+    <key>com.apple.security.network.server</key>
+    <true/>
+    
+    <!-- Location Services (für GPS-Tracking) -->
+    <key>com.apple.security.personal-information.location</key>
+    <true/>
+    
+    <!-- File Access (löst LSPrefs-Fehler) -->
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+    <key>com.apple.security.files.downloads.read-write</key>
+    <true/>
+    <key>com.apple.security.files.documents.read-write</key>
+    <true/>
+    
+    <!-- Audio Access (für Vario-Sounds) -->
+    <key>com.apple.security.device.audio-input</key>
+    <true/>
+    
+    <!-- Keychain Access -->
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)org.miggu69.GliderTracker</string>
+    </array>
+    
+    <!-- Hardware Access (optional) -->
+    <key>com.apple.security.device.usb</key>
+    <true/>
+    <key>com.apple.security.device.bluetooth</key>
+    <true/>
+</dict>
+</plist><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Bestehende Entitlements... -->
+    <key>aps-environment</key>
+    <string>development</string>
+    
+    <key>com.apple.developer.applesignin</key>
+    <array>
+        <string>Default</string>
+    </array>
+    
+    <!-- MEHRERE iCloud Container -->
+    <key>com.apple.developer.icloud-container-identifiers</key>
+    <array>
+        <!-- Neuer Container (primär) -->
+        <string>iCloud.org.miggu69.glidertracker</string>
+        <!-- Legacy Container (für Migration) -->
+        <string>iCloud.com.miggu69.glidertracker</string>
+    </array>
+    
+    <key>com.apple.developer.icloud-services</key>
+    <array>
+        <string>CloudDocuments</string>
+        <string>CloudKit</string>
+    </array>
+    
+    <key>com.apple.developer.ubiquity-container-identifiers</key>
+    <array>
+        <!-- Beide Container für CloudDocuments -->
+        <string>iCloud.org.miggu69.glidertracker</string>
+        <string>iCloud.com.miggu69.glidertracker</string>
+    </array>
+    
+    <key>com.apple.developer.ubiquity-kvstore-identifier</key>
+    <string>$(TeamIdentifierPrefix)org.miggu69.GliderTracker</string>
+    
+    <!-- Weitere Entitlements... -->
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+    <key>com.apple.security.network.client</key>
+    <true/>
+    <key>com.apple.security.network.server</key>
+    <true/>
+    <key>com.apple.security.personal-information.location</key>
+    <true/>
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+    <key>com.apple.security.files.downloads.read-write</key>
+    <true/>
+    <key>com.apple.security.files.documents.read-write</key>
+    <true/>
+    <key>com.apple.security.device.audio-input</key>
+    <true/>
+    
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)org.miggu69.GliderTracker</string>
+    </array>
+    
+    <key>com.apple.security.device.usb</key>
+    <true/>
+    <key>com.apple.security.device.bluetooth</key>
+    <true/>
+</dict>
+</plist>

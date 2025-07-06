@@ -1,0 +1,1118 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 90;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F0C1189DE1F5F520C6E4B1A /* CloudKitPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19745AC909C3F081F7093E28 /* CloudKitPublisher.swift */; };
+		9B112845A3D5A87FB1484DFD /* PilotFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CF21887CD5B4B450A1B48 /* PilotFetcher.swift */; };
+		E62C7FE62DF1EE6E00FC2C01 /* WatchAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E62C7FE52DF1EE6E00FC2C01 /* WatchAssets.xcassets */; platformFilters = (watchos, ); };
+		E6370E7E2DD9035200E8CCE3 /* airspace.json in Resources */ = {isa = PBXBuildFile; fileRef = E6370E7C2DD9012E00E8CCE3 /* airspace.json */; };
+		E6514B612D04A41900BBD2C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B602D04A41600BBD2C8 /* Constants.swift */; };
+		E6514B632D04A43F00BBD2C8 /* FileError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B622D04A43C00BBD2C8 /* FileError.swift */; };
+		E6514B652D04A46000BBD2C8 /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B642D04A45C00BBD2C8 /* FileManagerService.swift */; };
+		E6514B672D04A49A00BBD2C8 /* GliderTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B662D04A49600BBD2C8 /* GliderTrackerViewModel.swift */; };
+		E6514B692D04A52D00BBD2C8 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B682D04A52800BBD2C8 /* CustomAlertViewController.swift */; };
+		E6514B6B2D04A79F00BBD2C8 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B6A2D04A79C00BBD2C8 /* AudioService.swift */; };
+		E6514B6D2D04A8F700BBD2C8 /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B6C2D04A8F500BBD2C8 /* FileListViewController.swift */; };
+		E6514B742D059E3700BBD2C8 /* AirspaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B732D059E3300BBD2C8 /* AirspaceService.swift */; };
+		E6514B7C2D06C5A300BBD2C8 /* Airspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B7B2D06C59100BBD2C8 /* Airspace.swift */; };
+		E6514B802D072BED00BBD2C8 /* CSVHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B7F2D072BE900BBD2C8 /* CSVHandler.swift */; };
+		E6514B832D08015400BBD2C8 /* MKMapView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6514B822D08014F00BBD2C8 /* MKMapView+Extensions.swift */; };
+		E657B6D82B40A33D00065E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657B6D72B40A33D00065E85 /* AppDelegate.swift */; };
+		E657B6DA2B40A33D00065E85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657B6D92B40A33D00065E85 /* SceneDelegate.swift */; };
+		E657B6DC2B40A33D00065E85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657B6DB2B40A33D00065E85 /* ViewController.swift */; };
+		E657B6DF2B40A33D00065E85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E657B6DD2B40A33D00065E85 /* Main.storyboard */; };
+		E657B6E12B40A33F00065E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E657B6E02B40A33F00065E85 /* Assets.xcassets */; platformFilter = ios; };
+		E657B6E42B40A33F00065E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E657B6E22B40A33F00065E85 /* LaunchScreen.storyboard */; };
+		E657B6EF2B40A33F00065E85 /* GliderTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657B6EE2B40A33F00065E85 /* GliderTrackerTests.swift */; };
+		E657B6F92B40A33F00065E85 /* GliderTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657B6F82B40A33F00065E85 /* GliderTrackerUITests.swift */; };
+		E657B6FB2B40A33F00065E85 /* GliderTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657B6FA2B40A33F00065E85 /* GliderTrackerUITestsLaunchTests.swift */; };
+		E65E79AF2E17F84E0062603E /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65E79AE2E17F84E0062603E /* Debouncer.swift */; };
+		E66F4F942DF6E76200F1BB41 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66F4F932DF6E76200F1BB41 /* SettingsView.swift */; };
+		E67EA4AF2DC79F260083A579 /* InstrumentHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67EA4AE2DC79F230083A579 /* InstrumentHUD.swift */; };
+		E68164702DF312A1001A1259 /* default.csv in Resources */ = {isa = PBXBuildFile; fileRef = E681646E2DF312A1001A1259 /* default.csv */; platformFilter = ios; };
+		E684A4632DFB060600F71395 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E684A4622DFB060500F71395 /* SettingsViewController.swift */; };
+		E69D0D502D1D622C000E82AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D0D4F2D1D622C000E82AD /* LoginViewController.swift */; };
+		E69D0D522D1D8222000E82AD /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D0D512D1D821D000E82AD /* KeychainManager.swift */; };
+		E6AAD6542BEB649A00E96C10 /* MotionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AAD6532BEB649A00E96C10 /* MotionData.swift */; };
+		E6B11DE72DFC22930044DF6E /* watchinfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6B11DE62DFC22930044DF6E /* watchinfo.plist */; };
+		E6B143E52E1714A900C1C39B /* CarPlayManager 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B143E42E1714A900C1C39B /* CarPlayManager 2.swift */; };
+		E6BB96642B6570870008C818 /* VarioWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB96632B6570870008C818 /* VarioWatchApp.swift */; };
+		E6BB96662B6570870008C818 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB96652B6570870008C818 /* ContentView.swift */; };
+		E6BB96752B65708A0008C818 /* VarioWatch_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB96742B65708A0008C818 /* VarioWatch_Watch_AppTests.swift */; };
+		E6BB967F2B65708A0008C818 /* VarioWatch_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB967E2B65708A0008C818 /* VarioWatch_Watch_AppUITests.swift */; };
+		E6BB96812B65708A0008C818 /* VarioWatch_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB96802B65708A0008C818 /* VarioWatch_Watch_AppUITestsLaunchTests.swift */; };
+		E6BB96842B65708A0008C818 /* VarioWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E6BB96612B6570870008C818 /* VarioWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA7721E25540149446B9FA68 /* PilotAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61953F3EA38C9691CFAF4708 /* PilotAnnotation.swift */; };
+		EF8ACDDB6F4F7F067B44D37F /* PilotPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6FFCF40A0F770DB62449C1 /* PilotPosition.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E657B6EB2B40A33F00065E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E657B6CC2B40A33D00065E85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E657B6D32B40A33D00065E85;
+			remoteInfo = GliderTracker;
+		};
+		E657B6F52B40A33F00065E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E657B6CC2B40A33D00065E85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E657B6D32B40A33D00065E85;
+			remoteInfo = GliderTracker;
+		};
+		E6BB96712B65708A0008C818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E657B6CC2B40A33D00065E85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6BB96602B6570870008C818;
+			remoteInfo = "VarioWatch Watch App";
+		};
+		E6BB967B2B65708A0008C818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E657B6CC2B40A33D00065E85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6BB96602B6570870008C818;
+			remoteInfo = "VarioWatch Watch App";
+		};
+		E6BB96822B65708A0008C818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E657B6CC2B40A33D00065E85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6BB96602B6570870008C818;
+			remoteInfo = "VarioWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E631CBC42B51199E007E9ADC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolder = Product;
+			files = (
+				E6BB96842B65708A0008C818 /* VarioWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19745AC909C3F081F7093E28 /* CloudKitPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPublisher.swift; sourceTree = "<group>"; };
+		1D6FFCF40A0F770DB62449C1 /* PilotPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotPosition.swift; sourceTree = "<group>"; };
+		61953F3EA38C9691CFAF4708 /* PilotAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotAnnotation.swift; sourceTree = "<group>"; };
+		C02CF21887CD5B4B450A1B48 /* PilotFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotFetcher.swift; sourceTree = "<group>"; };
+		E62C7FE52DF1EE6E00FC2C01 /* WatchAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WatchAssets.xcassets; sourceTree = "<group>"; };
+		E6370E7C2DD9012E00E8CCE3 /* airspace.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = airspace.json; sourceTree = "<group>"; };
+		E6514B602D04A41600BBD2C8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E6514B622D04A43C00BBD2C8 /* FileError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileError.swift; sourceTree = "<group>"; };
+		E6514B642D04A45C00BBD2C8 /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
+		E6514B662D04A49600BBD2C8 /* GliderTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GliderTrackerViewModel.swift; sourceTree = "<group>"; };
+		E6514B682D04A52800BBD2C8 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		E6514B6A2D04A79C00BBD2C8 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		E6514B6C2D04A8F500BBD2C8 /* FileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListViewController.swift; sourceTree = "<group>"; };
+		E6514B732D059E3300BBD2C8 /* AirspaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirspaceService.swift; sourceTree = "<group>"; };
+		E6514B7B2D06C59100BBD2C8 /* Airspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airspace.swift; sourceTree = "<group>"; };
+		E6514B7F2D072BE900BBD2C8 /* CSVHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVHandler.swift; sourceTree = "<group>"; };
+		E6514B822D08014F00BBD2C8 /* MKMapView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extensions.swift"; sourceTree = "<group>"; };
+		E657B6D42B40A33D00065E85 /* GliderTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GliderTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E657B6D72B40A33D00065E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E657B6D92B40A33D00065E85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E657B6DB2B40A33D00065E85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E657B6E02B40A33F00065E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E657B6E52B40A33F00065E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E657B6EA2B40A33F00065E85 /* GliderTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GliderTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E657B6EE2B40A33F00065E85 /* GliderTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GliderTrackerTests.swift; sourceTree = "<group>"; };
+		E657B6F42B40A33F00065E85 /* GliderTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GliderTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E657B6F82B40A33F00065E85 /* GliderTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GliderTrackerUITests.swift; sourceTree = "<group>"; };
+		E657B6FA2B40A33F00065E85 /* GliderTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GliderTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E65E79AE2E17F84E0062603E /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		E66F4F932DF6E76200F1BB41 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E67EA4AE2DC79F230083A579 /* InstrumentHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentHUD.swift; sourceTree = "<group>"; };
+		E681646E2DF312A1001A1259 /* default.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = default.csv; sourceTree = "<group>"; };
+		E684A4622DFB060500F71395 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E69D0D4F2D1D622C000E82AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E69D0D512D1D821D000E82AD /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		E6AAD6532BEB649A00E96C10 /* MotionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionData.swift; sourceTree = "<group>"; };
+		E6AAD6552BEB715800E96C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6AAD6562BEB715800E96C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6B11DE62DFC22930044DF6E /* watchinfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = watchinfo.plist; sourceTree = "<group>"; };
+		E6B143E42E1714A900C1C39B /* CarPlayManager 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarPlayManager 2.swift"; sourceTree = "<group>"; };
+		E6B9E6762B5D6AE90037595F /* GliderTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GliderTracker.entitlements; sourceTree = "<group>"; };
+		E6BB96612B6570870008C818 /* VarioWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VarioWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BB96632B6570870008C818 /* VarioWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarioWatchApp.swift; sourceTree = "<group>"; };
+		E6BB96652B6570870008C818 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E6BB96702B65708A0008C818 /* VarioWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VarioWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BB96742B65708A0008C818 /* VarioWatch_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarioWatch_Watch_AppTests.swift; sourceTree = "<group>"; };
+		E6BB967A2B65708A0008C818 /* VarioWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VarioWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BB967E2B65708A0008C818 /* VarioWatch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarioWatch_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		E6BB96802B65708A0008C818 /* VarioWatch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarioWatch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E657B6D12B40A33D00065E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		E657B6E72B40A33F00065E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		E657B6F12B40A33F00065E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		E6BB965E2B6570870008C818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		E6BB966D2B65708A0008C818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		E6BB96772B65708A0008C818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E657B6CB2B40A33D00065E85 = {
+			isa = PBXGroup;
+			children = (
+				E6370E7C2DD9012E00E8CCE3 /* airspace.json */,
+				E657B6D62B40A33D00065E85 /* GliderTracker */,
+				E657B6ED2B40A33F00065E85 /* GliderTrackerTests */,
+				E657B6F72B40A33F00065E85 /* GliderTrackerUITests */,
+				E6BB96622B6570870008C818 /* VarioWatch Watch App */,
+				E6BB96732B65708A0008C818 /* VarioWatch Watch AppTests */,
+				E6BB967D2B65708A0008C818 /* VarioWatch Watch AppUITests */,
+				E657B6D52B40A33D00065E85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E657B6D52B40A33D00065E85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E657B6D42B40A33D00065E85 /* GliderTracker.app */,
+				E657B6EA2B40A33F00065E85 /* GliderTrackerTests.xctest */,
+				E657B6F42B40A33F00065E85 /* GliderTrackerUITests.xctest */,
+				E6BB96612B6570870008C818 /* VarioWatch Watch App.app */,
+				E6BB96702B65708A0008C818 /* VarioWatch Watch AppTests.xctest */,
+				E6BB967A2B65708A0008C818 /* VarioWatch Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E657B6D62B40A33D00065E85 /* GliderTracker */ = {
+			isa = PBXGroup;
+			children = (
+				E65E79AE2E17F84E0062603E /* Debouncer.swift */,
+				E67EA4AE2DC79F230083A579 /* InstrumentHUD.swift */,
+				E69D0D512D1D821D000E82AD /* KeychainManager.swift */,
+				E69D0D4F2D1D622C000E82AD /* LoginViewController.swift */,
+				E6514B822D08014F00BBD2C8 /* MKMapView+Extensions.swift */,
+				E66F4F932DF6E76200F1BB41 /* SettingsView.swift */,
+				E6514B7F2D072BE900BBD2C8 /* CSVHandler.swift */,
+				E6514B7B2D06C59100BBD2C8 /* Airspace.swift */,
+				E6514B732D059E3300BBD2C8 /* AirspaceService.swift */,
+				E6514B6C2D04A8F500BBD2C8 /* FileListViewController.swift */,
+				E6514B6A2D04A79C00BBD2C8 /* AudioService.swift */,
+				E6514B682D04A52800BBD2C8 /* CustomAlertViewController.swift */,
+				E6514B662D04A49600BBD2C8 /* GliderTrackerViewModel.swift */,
+				E6514B642D04A45C00BBD2C8 /* FileManagerService.swift */,
+				E6514B622D04A43C00BBD2C8 /* FileError.swift */,
+				E6514B602D04A41600BBD2C8 /* Constants.swift */,
+				E6B9E6762B5D6AE90037595F /* GliderTracker.entitlements */,
+				E657B6D72B40A33D00065E85 /* AppDelegate.swift */,
+				E657B6D92B40A33D00065E85 /* SceneDelegate.swift */,
+				E657B6DB2B40A33D00065E85 /* ViewController.swift */,
+				E657B6DD2B40A33D00065E85 /* Main.storyboard */,
+				E657B6E02B40A33F00065E85 /* Assets.xcassets */,
+				E657B6E22B40A33F00065E85 /* LaunchScreen.storyboard */,
+				E657B6E52B40A33F00065E85 /* Info.plist */,
+				C02CF21887CD5B4B450A1B48 /* PilotFetcher.swift */,
+				1D6FFCF40A0F770DB62449C1 /* PilotPosition.swift */,
+				19745AC909C3F081F7093E28 /* CloudKitPublisher.swift */,
+				61953F3EA38C9691CFAF4708 /* PilotAnnotation.swift */,
+				E681646F2DF312A1001A1259 /* Resources */,
+				E684A4622DFB060500F71395 /* SettingsViewController.swift */,
+				E6B143E42E1714A900C1C39B /* CarPlayManager 2.swift */,
+			);
+			path = GliderTracker;
+			sourceTree = "<group>";
+		};
+		E657B6ED2B40A33F00065E85 /* GliderTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E657B6EE2B40A33F00065E85 /* GliderTrackerTests.swift */,
+			);
+			path = GliderTrackerTests;
+			sourceTree = "<group>";
+		};
+		E657B6F72B40A33F00065E85 /* GliderTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E657B6F82B40A33F00065E85 /* GliderTrackerUITests.swift */,
+				E657B6FA2B40A33F00065E85 /* GliderTrackerUITestsLaunchTests.swift */,
+			);
+			path = GliderTrackerUITests;
+			sourceTree = "<group>";
+		};
+		E681646F2DF312A1001A1259 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E681646E2DF312A1001A1259 /* default.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E6BB96622B6570870008C818 /* VarioWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				E6BB96632B6570870008C818 /* VarioWatchApp.swift */,
+				E6AAD6532BEB649A00E96C10 /* MotionData.swift */,
+				E6BB96652B6570870008C818 /* ContentView.swift */,
+				E62C7FE52DF1EE6E00FC2C01 /* WatchAssets.xcassets */,
+				E6BB96692B65708A0008C818 /* Preview Content */,
+				E6B11DE62DFC22930044DF6E /* watchinfo.plist */,
+			);
+			path = "VarioWatch Watch App";
+			sourceTree = "<group>";
+		};
+		E6BB96692B65708A0008C818 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6BB96732B65708A0008C818 /* VarioWatch Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6BB96742B65708A0008C818 /* VarioWatch_Watch_AppTests.swift */,
+			);
+			path = "VarioWatch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		E6BB967D2B65708A0008C818 /* VarioWatch Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E6BB967E2B65708A0008C818 /* VarioWatch_Watch_AppUITests.swift */,
+				E6BB96802B65708A0008C818 /* VarioWatch_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "VarioWatch Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E657B6D32B40A33D00065E85 /* GliderTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E657B6FE2B40A33F00065E85 /* Build configuration list for PBXNativeTarget "GliderTracker" */;
+			buildPhases = (
+				E657B6D02B40A33D00065E85 /* Sources */,
+				E657B6D12B40A33D00065E85 /* Frameworks */,
+				E657B6D22B40A33D00065E85 /* Resources */,
+				E631CBC42B51199E007E9ADC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6BB96832B65708A0008C818 /* PBXTargetDependency */,
+			);
+			name = GliderTracker;
+			productName = GliderTracker;
+			productReference = E657B6D42B40A33D00065E85 /* GliderTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E657B6E92B40A33F00065E85 /* GliderTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E657B7012B40A33F00065E85 /* Build configuration list for PBXNativeTarget "GliderTrackerTests" */;
+			buildPhases = (
+				E657B6E62B40A33F00065E85 /* Sources */,
+				E657B6E72B40A33F00065E85 /* Frameworks */,
+				E657B6E82B40A33F00065E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E657B6EC2B40A33F00065E85 /* PBXTargetDependency */,
+			);
+			name = GliderTrackerTests;
+			productName = GliderTrackerTests;
+			productReference = E657B6EA2B40A33F00065E85 /* GliderTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E657B6F32B40A33F00065E85 /* GliderTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E657B7042B40A33F00065E85 /* Build configuration list for PBXNativeTarget "GliderTrackerUITests" */;
+			buildPhases = (
+				E657B6F02B40A33F00065E85 /* Sources */,
+				E657B6F12B40A33F00065E85 /* Frameworks */,
+				E657B6F22B40A33F00065E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E657B6F62B40A33F00065E85 /* PBXTargetDependency */,
+			);
+			name = GliderTrackerUITests;
+			productName = GliderTrackerUITests;
+			productReference = E657B6F42B40A33F00065E85 /* GliderTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E6BB96602B6570870008C818 /* VarioWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6BB968B2B65708A0008C818 /* Build configuration list for PBXNativeTarget "VarioWatch Watch App" */;
+			buildPhases = (
+				E6BB965D2B6570870008C818 /* Sources */,
+				E6BB965E2B6570870008C818 /* Frameworks */,
+				E6BB965F2B6570870008C818 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "VarioWatch Watch App";
+			productName = "VarioWatch Watch App";
+			productReference = E6BB96612B6570870008C818 /* VarioWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6BB966F2B65708A0008C818 /* VarioWatch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6BB968C2B65708A0008C818 /* Build configuration list for PBXNativeTarget "VarioWatch Watch AppTests" */;
+			buildPhases = (
+				E6BB966C2B65708A0008C818 /* Sources */,
+				E6BB966D2B65708A0008C818 /* Frameworks */,
+				E6BB966E2B65708A0008C818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6BB96722B65708A0008C818 /* PBXTargetDependency */,
+			);
+			name = "VarioWatch Watch AppTests";
+			productName = "VarioWatch Watch AppTests";
+			productReference = E6BB96702B65708A0008C818 /* VarioWatch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6BB96792B65708A0008C818 /* VarioWatch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6BB968D2B65708A0008C818 /* Build configuration list for PBXNativeTarget "VarioWatch Watch AppUITests" */;
+			buildPhases = (
+				E6BB96762B65708A0008C818 /* Sources */,
+				E6BB96772B65708A0008C818 /* Frameworks */,
+				E6BB96782B65708A0008C818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6BB967C2B65708A0008C818 /* PBXTargetDependency */,
+			);
+			name = "VarioWatch Watch AppUITests";
+			productName = "VarioWatch Watch AppUITests";
+			productReference = E6BB967A2B65708A0008C818 /* VarioWatch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E657B6CC2B40A33D00065E85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 2600;
+				ORGANIZATIONNAME = "@Miggu69";
+				TargetAttributes = {
+					E657B6D32B40A33D00065E85 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					E657B6E92B40A33F00065E85 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = E657B6D32B40A33D00065E85;
+					};
+					E657B6F32B40A33F00065E85 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = E657B6D32B40A33D00065E85;
+					};
+					E6BB96602B6570870008C818 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					E6BB966F2B65708A0008C818 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E6BB96602B6570870008C818;
+					};
+					E6BB96792B65708A0008C818 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E6BB96602B6570870008C818;
+					};
+				};
+			};
+			buildConfigurationList = E657B6CF2B40A33D00065E85 /* Build configuration list for PBXProject "GliderTracker" */;
+			developmentRegion = de;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				de,
+				Base,
+			);
+			mainGroup = E657B6CB2B40A33D00065E85;
+			preferredProjectObjectVersion = 90;
+			productRefGroup = E657B6D52B40A33D00065E85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E657B6D32B40A33D00065E85 /* GliderTracker */,
+				E657B6E92B40A33F00065E85 /* GliderTrackerTests */,
+				E657B6F32B40A33F00065E85 /* GliderTrackerUITests */,
+				E6BB96602B6570870008C818 /* VarioWatch Watch App */,
+				E6BB966F2B65708A0008C818 /* VarioWatch Watch AppTests */,
+				E6BB96792B65708A0008C818 /* VarioWatch Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E657B6D22B40A33D00065E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				E6370E7E2DD9035200E8CCE3 /* airspace.json in Resources */,
+				E68164702DF312A1001A1259 /* default.csv in Resources */,
+				E657B6E42B40A33F00065E85 /* LaunchScreen.storyboard in Resources */,
+				E657B6E12B40A33F00065E85 /* Assets.xcassets in Resources */,
+				E657B6DF2B40A33D00065E85 /* Main.storyboard in Resources */,
+			);
+		};
+		E657B6E82B40A33F00065E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		E657B6F22B40A33F00065E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		E6BB965F2B6570870008C818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				E6B11DE72DFC22930044DF6E /* watchinfo.plist in Resources */,
+				E62C7FE62DF1EE6E00FC2C01 /* WatchAssets.xcassets in Resources */,
+			);
+		};
+		E6BB966E2B65708A0008C818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		E6BB96782B65708A0008C818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E657B6D02B40A33D00065E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				E657B6DC2B40A33D00065E85 /* ViewController.swift in Sources */,
+				E657B6D82B40A33D00065E85 /* AppDelegate.swift in Sources */,
+				E6514B6D2D04A8F700BBD2C8 /* FileListViewController.swift in Sources */,
+				E67EA4AF2DC79F260083A579 /* InstrumentHUD.swift in Sources */,
+				E69D0D502D1D622C000E82AD /* LoginViewController.swift in Sources */,
+				E6514B632D04A43F00BBD2C8 /* FileError.swift in Sources */,
+				E657B6DA2B40A33D00065E85 /* SceneDelegate.swift in Sources */,
+				E6514B7C2D06C5A300BBD2C8 /* Airspace.swift in Sources */,
+				E65E79AF2E17F84E0062603E /* Debouncer.swift in Sources */,
+				E69D0D522D1D8222000E82AD /* KeychainManager.swift in Sources */,
+				E6514B692D04A52D00BBD2C8 /* CustomAlertViewController.swift in Sources */,
+				E6514B832D08015400BBD2C8 /* MKMapView+Extensions.swift in Sources */,
+				E6514B6B2D04A79F00BBD2C8 /* AudioService.swift in Sources */,
+				E6514B612D04A41900BBD2C8 /* Constants.swift in Sources */,
+				E6514B742D059E3700BBD2C8 /* AirspaceService.swift in Sources */,
+				E6514B802D072BED00BBD2C8 /* CSVHandler.swift in Sources */,
+				E684A4632DFB060600F71395 /* SettingsViewController.swift in Sources */,
+				E6514B672D04A49A00BBD2C8 /* GliderTrackerViewModel.swift in Sources */,
+				E6514B652D04A46000BBD2C8 /* FileManagerService.swift in Sources */,
+				E6B143E52E1714A900C1C39B /* CarPlayManager 2.swift in Sources */,
+				1F0C1189DE1F5F520C6E4B1A /* CloudKitPublisher.swift in Sources */,
+				EA7721E25540149446B9FA68 /* PilotAnnotation.swift in Sources */,
+				EF8ACDDB6F4F7F067B44D37F /* PilotPosition.swift in Sources */,
+				9B112845A3D5A87FB1484DFD /* PilotFetcher.swift in Sources */,
+				E66F4F942DF6E76200F1BB41 /* SettingsView.swift in Sources */,
+			);
+		};
+		E657B6E62B40A33F00065E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				E657B6EF2B40A33F00065E85 /* GliderTrackerTests.swift in Sources */,
+			);
+		};
+		E657B6F02B40A33F00065E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				E657B6FB2B40A33F00065E85 /* GliderTrackerUITestsLaunchTests.swift in Sources */,
+				E657B6F92B40A33F00065E85 /* GliderTrackerUITests.swift in Sources */,
+			);
+		};
+		E6BB965D2B6570870008C818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				E6BB96662B6570870008C818 /* ContentView.swift in Sources */,
+				E6AAD6542BEB649A00E96C10 /* MotionData.swift in Sources */,
+				E6BB96642B6570870008C818 /* VarioWatchApp.swift in Sources */,
+			);
+		};
+		E6BB966C2B65708A0008C818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				E6BB96752B65708A0008C818 /* VarioWatch_Watch_AppTests.swift in Sources */,
+			);
+		};
+		E6BB96762B65708A0008C818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				E6BB96812B65708A0008C818 /* VarioWatch_Watch_AppUITestsLaunchTests.swift in Sources */,
+				E6BB967F2B65708A0008C818 /* VarioWatch_Watch_AppUITests.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E657B6EC2B40A33F00065E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E657B6D32B40A33D00065E85 /* GliderTracker */;
+			targetProxy = E657B6EB2B40A33F00065E85 /* PBXContainerItemProxy */;
+		};
+		E657B6F62B40A33F00065E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E657B6D32B40A33D00065E85 /* GliderTracker */;
+			targetProxy = E657B6F52B40A33F00065E85 /* PBXContainerItemProxy */;
+		};
+		E6BB96722B65708A0008C818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6BB96602B6570870008C818 /* VarioWatch Watch App */;
+			targetProxy = E6BB96712B65708A0008C818 /* PBXContainerItemProxy */;
+		};
+		E6BB967C2B65708A0008C818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6BB96602B6570870008C818 /* VarioWatch Watch App */;
+			targetProxy = E6BB967B2B65708A0008C818 /* PBXContainerItemProxy */;
+		};
+		E6BB96832B65708A0008C818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6BB96602B6570870008C818 /* VarioWatch Watch App */;
+			targetProxy = E6BB96822B65708A0008C818 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E657B6DD2B40A33D00065E85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6AAD6552BEB715800E96C10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E657B6E22B40A33F00065E85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6AAD6562BEB715800E96C10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E657B6FC2B40A33F00065E85 /* Debug configuration for PBXProject "GliderTracker" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4STY96V479;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		E657B6FD2B40A33F00065E85 /* Release configuration for PBXProject "GliderTracker" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4STY96V479;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		E657B6FF2B40A33F00065E85 /* Debug configuration for PBXNativeTarget "GliderTracker" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = GliderTracker/GliderTracker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = 4STY96V479;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GliderTracker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GliderTrackerVario;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Wir benötigen Ihren Standort, um Geschwindigkeit und Höhe ständig zu messen.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Wir benötigen Ihren Standort, um Geschwindigkeit und Höhe zu messen.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 22.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.miggu69.GliderTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E657B7002B40A33F00065E85 /* Release configuration for PBXNativeTarget "GliderTracker" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = GliderTracker/GliderTracker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = 4STY96V479;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GliderTracker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GliderTrackerVario;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Wir benötigen Ihren Standort, um Geschwindigkeit und Höhe ständig zu messen.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Wir benötigen Ihren Standort, um Geschwindigkeit und Höhe zu messen.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 22.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.miggu69.GliderTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E657B7022B40A33F00065E85 /* Debug configuration for PBXNativeTarget "GliderTrackerTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.miggu69.GliderTracker.GliderTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GliderTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GliderTracker";
+			};
+			name = Debug;
+		};
+		E657B7032B40A33F00065E85 /* Release configuration for PBXNativeTarget "GliderTrackerTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.miggu69.GliderTracker.GliderTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GliderTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GliderTracker";
+			};
+			name = Release;
+		};
+		E657B7052B40A33F00065E85 /* Debug configuration for PBXNativeTarget "GliderTrackerUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.miggu69.GliderTracker.GliderTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GliderTracker;
+			};
+			name = Debug;
+		};
+		E657B7062B40A33F00065E85 /* Release configuration for PBXNativeTarget "GliderTrackerUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.miggu69.GliderTracker.GliderTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GliderTracker;
+			};
+			name = Release;
+		};
+		E6BB96852B65708A0008C818 /* Debug configuration for PBXNativeTarget "VarioWatch Watch App" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VarioWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = org.miggu69.GliderTracker;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.miggu69.GliderTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				USER_DEFINED_INFO_PLIST = VarioWatch/Info.plist;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		E6BB96862B65708A0008C818 /* Release configuration for PBXNativeTarget "VarioWatch Watch App" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VarioWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = org.miggu69.GliderTracker;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.miggu69.GliderTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				USER_DEFINED_INFO_PLIST = VarioWatch/Info.plist;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		E6BB96872B65708A0008C818 /* Debug configuration for PBXNativeTarget "VarioWatch Watch AppTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.miggu69.GliderTracker.VarioWatch.VarioWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VarioWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VarioWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		E6BB96882B65708A0008C818 /* Release configuration for PBXNativeTarget "VarioWatch Watch AppTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.miggu69.GliderTracker.VarioWatch.VarioWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VarioWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VarioWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		E6BB96892B65708A0008C818 /* Debug configuration for PBXNativeTarget "VarioWatch Watch AppUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.miggu69.GliderTracker.VarioWatch.VarioWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "VarioWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		E6BB968A2B65708A0008C818 /* Release configuration for PBXNativeTarget "VarioWatch Watch AppUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.miggu69.GliderTracker.VarioWatch.VarioWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "VarioWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E657B6CF2B40A33D00065E85 /* Build configuration list for PBXProject "GliderTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E657B6FC2B40A33F00065E85 /* Debug configuration for PBXProject "GliderTracker" */,
+				E657B6FD2B40A33F00065E85 /* Release configuration for PBXProject "GliderTracker" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E657B6FE2B40A33F00065E85 /* Build configuration list for PBXNativeTarget "GliderTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E657B6FF2B40A33F00065E85 /* Debug configuration for PBXNativeTarget "GliderTracker" */,
+				E657B7002B40A33F00065E85 /* Release configuration for PBXNativeTarget "GliderTracker" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E657B7012B40A33F00065E85 /* Build configuration list for PBXNativeTarget "GliderTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E657B7022B40A33F00065E85 /* Debug configuration for PBXNativeTarget "GliderTrackerTests" */,
+				E657B7032B40A33F00065E85 /* Release configuration for PBXNativeTarget "GliderTrackerTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E657B7042B40A33F00065E85 /* Build configuration list for PBXNativeTarget "GliderTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E657B7052B40A33F00065E85 /* Debug configuration for PBXNativeTarget "GliderTrackerUITests" */,
+				E657B7062B40A33F00065E85 /* Release configuration for PBXNativeTarget "GliderTrackerUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E6BB968B2B65708A0008C818 /* Build configuration list for PBXNativeTarget "VarioWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BB96852B65708A0008C818 /* Debug configuration for PBXNativeTarget "VarioWatch Watch App" */,
+				E6BB96862B65708A0008C818 /* Release configuration for PBXNativeTarget "VarioWatch Watch App" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E6BB968C2B65708A0008C818 /* Build configuration list for PBXNativeTarget "VarioWatch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BB96872B65708A0008C818 /* Debug configuration for PBXNativeTarget "VarioWatch Watch AppTests" */,
+				E6BB96882B65708A0008C818 /* Release configuration for PBXNativeTarget "VarioWatch Watch AppTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E6BB968D2B65708A0008C818 /* Build configuration list for PBXNativeTarget "VarioWatch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BB96892B65708A0008C818 /* Debug configuration for PBXNativeTarget "VarioWatch Watch AppUITests" */,
+				E6BB968A2B65708A0008C818 /* Release configuration for PBXNativeTarget "VarioWatch Watch AppUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E657B6CC2B40A33D00065E85 /* Project object */;
+}

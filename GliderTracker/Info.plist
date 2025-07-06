@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>GliderTracker</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeIconFiles</key>
+			<array/>
+			<key>CFBundleTypeName</key>
+			<string>GPX Track</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.topografix.gpx</string>
+			</array>
+			<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>igc</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>IGC Flight Log</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.travel</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>api.core.openaip.net</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+			<key>glidertracker-storage.s3.eu-central-1.amazonaws.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+			<key>openaip.net</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+			<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+		<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>GliderTracker möchte auf den Desktop zugreifen, um Flugdaten zu exportieren.</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>GliderTracker speichert und lädt Flugdaten in den Dokumenten-Ordner.</string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string>GliderTracker möchte Luftraum-Daten und Flugprotokolle in den Downloads-Ordner speichern.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>GliderTracker zeichnet deine Flugroute auch im Hintergrund auf und warnt dich vor Lufträumen in der Nähe.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>GliderTracker benötigt Zugriff auf den Standort, um deine Flugroute aufzuzeichnen und relevante Lufträume anzuzeigen.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>GliderTracker benötigt Zugriff auf den Standort, um deine Flugroute aufzuzeichnen und relevante Lufträume anzuzeigen.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>GliderTracker verwendet Audio-Feedback für den Vario-Ton während des Flugs.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>GliderTracker benötigt den Bewegungssensor, um Flugbewegungen und Vario-Daten aufzuzeichnen.</string>
+	<key>NSNetworkVolumesUsageDescription</key>
+	<string>GliderTracker kann Flugdaten auf Netzwerk-Laufwerken speichern.</string>
+	<key>NSRemovableVolumesUsageDescription</key>
+	<string>GliderTracker kann Flugdaten auf externe Speichermedien exportieren.</string>
+	<key>NSUbiquitousContainers</key>
+	<dict>
+		<key>iCloud.com.miggu69.glidertracker</key>
+		<dict>
+			<key>NSUbiquitousContainerIsDocumentScoped</key>
+			<true/>
+			<key>NSUbiquitousContainerName</key>
+			<string>GliderTracker Legacy</string>
+			<key>NSUbiquitousContainerSupportedFolderLevels</key>
+			<string>Any</string>
+			<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+		<key>iCloud.org.miggu69.GliderTracker</key>
+		<dict>
+			<key>NSUbiquitousContainerIsDocumentScoped</key>
+			<true/>
+			<key>NSUbiquitousContainerName</key>
+			<string>GliderTracker</string>
+			<key>NSUbiquitousContainerSupportedFolderLevels</key>
+			<string>Any</string>
+			<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+		<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>CPTemplateApplicationScene</key>
+		<dict>
+			<key>UISceneClassName</key>
+			<string>CPTemplateApplicationScene</string>
+			<key>UISceneConfigurationName</key>
+			<string>CarPlay</string>
+			<key>UISceneDelegateClassName</key>
+			<string>$(PRODUCT_MODULE_NAME).CarPlaySceneDelegate</string>
+			<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+			</array>
+			<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+		<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>audio</string>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UIKeyboardShortcuts</key>
+	<array>
+		<dict>
+			<key>UIKeyboardShortcutKey</key>
+			<string>s</string>
+			<key>UIKeyboardShortcutModifiers</key>
+			<integer>1048576</integer>
+			<key>UIKeyboardShortcutTitle</key>
+			<string>Start Recording</string>
+			<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>location-services</string>
+	</array>
+	<key>UIRequiresPersistentWiFi</key>
+	<false/>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.xml</string>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>GPS Exchange Format</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.topografix.gpx</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>gpx</string>
+				</array>
+				<key>public.mime-type</key>
+				<array>
+					<string>application/gpx+xml</string>
+				</array>
+				<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+			<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+	</array>
+	<key>com.apple.developer.applesignin</key>
+	<array>
+		<string>Default</string>
+	</array>
+	<key>UISupportsCarPlay</key>
+	<true/>
+	<key>CPTemplatesSupported</key>
+	<array>
+		<string>CPGaugeTemplate</string>
+		<string>CPListTemplate</string>
+	</array>
+</dict>
+</plist>
